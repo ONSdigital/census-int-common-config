@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>uk.gov.ons.ctp.product</groupId>
+  <artifactId>rm-common-config</artifactId>
+  <version>10.38.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>CTP SDC Dependencies</name>
+  <description>CTP SDC Dependencies</description>
+  <url>https://github.com/ONSdigital/rm-common-config</url>
+
+  <organization>
+    <name>UK Office For National Statistics</name>
+    <url>http://ons.gov.uk</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <url>https://github.com/ONSdigital/rm-common-config</url>
+  </scm>
+
+  <properties>
+    <!-- Dependency versions -->
+    <springboot.version>1.5.3.RELEASE</springboot.version>
+    <common.version>10.37.0-SNAPSHOT</common.version>
+    <testng.version>6.9.10</testng.version>
+    <orika.version>1.4.6</orika.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${springboot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>Camden.SR4</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>${testng.version}</version>
+        <scope>test</scope>
+      </dependency>
+
+
+      <dependency>
+        <groupId>uk.gov.ons.ctp.common</groupId>
+        <artifactId>framework</artifactId>
+        <version>${common.version}</version>
+        </dependency>
+        
+        <dependency>
+        <groupId>uk.gov.ons.ctp.common</groupId>
+        <artifactId>test-framework</artifactId>
+        <version>${common.version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>ma.glasnost.orika</groupId>
+        <artifactId>orika-core</artifactId>
+        <version>${orika.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>ma.glasnost.orika</groupId>
+        <artifactId>orika-eclipse-tools</artifactId>
+        <version>${orika.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+</project>
+
