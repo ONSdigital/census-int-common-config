@@ -65,7 +65,7 @@
         <artifactId>framework</artifactId>
         <version>${common.version}</version>
         </dependency>
-        
+
         <dependency>
         <groupId>uk.gov.ons.ctp.common</groupId>
         <artifactId>test-framework</artifactId>
@@ -87,5 +87,25 @@
     </dependencies>
   </dependencyManagement>
 
-</project>
+  <profiles>
+    <profile>
+      <id>artifactory</id>
+      <distributionManagement>
+        <repository>
+          <id>central</id>
+          <name>libs-release</name>
+          <url>http://artifactory.rmdev.onsdigital.uk/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+          <id>snapshots</id>
+          <name>libs-snapshots</name>
+          <url>http://artifactory.rmdev.onsdigital.uk/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+      </distributionManagement>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+  </profiles>
 
+</project>
