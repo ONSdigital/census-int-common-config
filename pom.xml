@@ -85,7 +85,6 @@
     </dependencies>
   </dependencyManagement>
 
-<<<<<<< HEAD
   <build>
     <pluginManagement>
       <plugins>
@@ -98,8 +97,6 @@
     </pluginManagement>
   </build>
 
-</project>
-=======
   <profiles>
     <profile>
       <id>artifactory</id>
@@ -120,6 +117,5 @@
       </activation>
     </profile>
   </profiles>
->>>>>>> 883ebdbf122abfb0f733d2a00ce622fefa15cb03
 
 </project>
