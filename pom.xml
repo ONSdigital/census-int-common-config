@@ -27,7 +27,6 @@
   </scm>
 
   <properties>
-    <!-- Dependency versions -->
     <springboot.version>1.5.3.RELEASE</springboot.version>
     <common.version>10.37.0-SNAPSHOT</common.version>
     <testng.version>6.9.10</testng.version>
@@ -59,14 +58,13 @@
         <scope>test</scope>
       </dependency>
 
-
       <dependency>
         <groupId>uk.gov.ons.ctp.common</groupId>
         <artifactId>framework</artifactId>
         <version>${common.version}</version>
-        </dependency>
-        
-        <dependency>
+      </dependency>
+
+      <dependency>
         <groupId>uk.gov.ons.ctp.common</groupId>
         <artifactId>test-framework</artifactId>
         <version>${common.version}</version>
@@ -86,6 +84,18 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>${springboot.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 
 </project>
 
