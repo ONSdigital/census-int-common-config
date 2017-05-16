@@ -28,7 +28,7 @@
 
   <properties>
     <springboot.version>1.5.3.RELEASE</springboot.version>
-    <common.version>10.37.0-SNAPSHOT</common.version>
+    <common.version>10.38.0-SNAPSHOT</common.version>
     <testng.version>6.9.10</testng.version>
     <orika.version>1.4.6</orika.version>
   </properties>
