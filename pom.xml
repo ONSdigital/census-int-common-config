@@ -85,6 +85,7 @@
     </dependencies>
   </dependencyManagement>
 
+<<<<<<< HEAD
   <build>
     <pluginManagement>
       <plugins>
@@ -98,4 +99,27 @@
   </build>
 
 </project>
+=======
+  <profiles>
+    <profile>
+      <id>artifactory</id>
+      <distributionManagement>
+        <repository>
+          <id>central</id>
+          <name>libs-release</name>
+          <url>http://artifactory.rmdev.onsdigital.uk/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+          <id>snapshots</id>
+          <name>libs-snapshots</name>
+          <url>http://artifactory.rmdev.onsdigital.uk/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+      </distributionManagement>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+  </profiles>
+>>>>>>> 883ebdbf122abfb0f733d2a00ce622fefa15cb03
 
+</project>
