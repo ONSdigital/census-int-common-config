@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.gov.ons.ctp.product</groupId>
   <artifactId>rm-common-config</artifactId>
-  <version>10.41.0-SNAPSHOT</version>
+  <version>10.42.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>CTP SDC Dependencies</name>
   <description>CTP SDC Dependencies</description>
@@ -29,7 +29,7 @@
   <properties>
     <springboot.version>1.5.3.RELEASE</springboot.version>
     <springcloud.version>Camden.SR5</springcloud.version>
-    <common.version>10.41.0-SNAPSHOT</common.version>
+    <common.version>10.42.0-SNAPSHOT</common.version>
     <testng.version>6.9.10</testng.version>
     <orika.version>1.4.6</orika.version>
   </properties>
