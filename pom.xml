@@ -31,7 +31,7 @@
     <springcloud.version>Dalston.SR1</springcloud.version>
     <common.version>10.44.0-SNAPSHOT</common.version>
     <testng.version>6.11</testng.version>
-    <orika.version>1.4.6</orika.version>
+    <orika.version>1.5.1</orika.version>
   </properties>
 
   <dependencyManagement>
