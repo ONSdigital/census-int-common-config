@@ -31,7 +31,6 @@
     <springcloud.version>Dalston.SR1</springcloud.version>
     <common.version>10.45.0-SNAPSHOT</common.version>
     <java.version>1.8</java.version>
-    <testng.version>6.11</testng.version>
     <orika.version>1.5.1</orika.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -58,7 +57,7 @@
       <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
-        <version>${testng.version}</version>
+        <version>6.11</version>
         <scope>test</scope>
       </dependency>
 
