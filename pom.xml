@@ -56,23 +56,9 @@
       </dependency>
 
       <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>6.11</version>
-        <scope>test</scope>
-      </dependency>
-
-      <dependency>
         <groupId>uk.gov.ons.ctp.common</groupId>
         <artifactId>framework</artifactId>
         <version>${common.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>uk.gov.ons.ctp.common</groupId>
-        <artifactId>test-framework</artifactId>
-        <version>${common.version}</version>
-        <scope>test</scope>
       </dependency>
 
       <dependency>
@@ -127,6 +113,20 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-csv</artifactId>
         <version>1.4</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>6.11</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>uk.gov.ons.ctp.common</groupId>
+        <artifactId>test-framework</artifactId>
+        <version>${common.version}</version>
+        <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
