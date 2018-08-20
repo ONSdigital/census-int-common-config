@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.gov.ons.ctp.product</groupId>
   <artifactId>rm-common-config</artifactId>
-  <version>10.49.13-SNAPSHOT</version>
+  <version>10.49.14</version>
   <packaging>pom</packaging>
   <name>CTP SDC Dependencies</name>
   <description>CTP SDC Dependencies</description>
@@ -35,6 +35,7 @@
     <java.version>1.8</java.version>
     <orika.version>1.5.1</orika.version>
     <surefire.version>2.20</surefire.version>
+    <godaddylogging.version>1.2.5</godaddylogging.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
@@ -115,6 +116,12 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-csv</artifactId>
         <version>1.4</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.godaddy</groupId>
+        <artifactId>logging</artifactId>
+        <version>${godaddylogging.version}</version>
       </dependency>
 
 
