@@ -72,7 +72,7 @@
       </dependency>
 
       <dependency>
-        <groupId>uk.gov.ons.ctp.common</groupId>
+        <groupId>uk.gov.ons.ctp.integration.common</groupId>
         <artifactId>framework</artifactId>
         <version>${common.version}</version>
       </dependency>
