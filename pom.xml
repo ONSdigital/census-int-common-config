@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.gov.ons.ctp.integration</groupId>
   <artifactId>census-int-common-config</artifactId>
@@ -34,9 +36,11 @@
     <springcloud.version>Finchley.RELEASE</springcloud.version>
     <common.version>0.0.0-SNAPSHOT</common.version>
     <java.version>11</java.version>
-    <jacoco.version>0.8.2</jacoco.version>
+    <jacoco.version>0.8.3</jacoco.version>
     <orika.version>1.5.2</orika.version>
-    <surefire.version>3.0.0-M1</surefire.version>
+    <surefire.version>3.0.0-M3</surefire.version>
+    <lombok.version>1.18.4</lombok.version>
+    <failsafe.version>3.0.0-M3</failsafe.version>
     <godaddylogging.version>1.2.5</godaddylogging.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -137,10 +141,6 @@
         <version>3.8.1</version>
       </dependency>
 
-      <!-- <dependency> <groupId>net.sourceforge.cobertura</groupId> <artifactId>cobertura</artifactId> 
-        <version>2.1.1</version> <exclusions> <exclusion> <artifactId>tools</artifactId> 
-        <groupId>com.sun</groupId> </exclusion> </exclusions> </dependency> -->
-
       <dependency>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
@@ -192,6 +192,7 @@
   <build>
     <pluginManagement>
       <plugins>
+
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>versions-maven-plugin</artifactId>
@@ -200,6 +201,7 @@
             <generateBackupPoms>false</generateBackupPoms>
           </configuration>
         </plugin>
+
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
@@ -208,6 +210,7 @@
             <scmCommentPrefix>[ci skip]</scmCommentPrefix>
           </configuration>
         </plugin>
+
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
@@ -216,6 +219,7 @@
             <release>${java.version}</release>
           </configuration>
         </plugin>
+
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
@@ -248,6 +252,7 @@
             </execution>
           </executions>
         </plugin>
+
         <plugin>
           <groupId>com.coveo</groupId>
           <artifactId>fmt-maven-plugin</artifactId>
@@ -260,10 +265,11 @@
             </execution>
           </executions>
         </plugin>
+
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.0</version>
+          <version>${surefire.version}</version>
           <configuration>
             <argLine>
               --illegal-access=permit
@@ -275,10 +281,11 @@
             <dependency>
               <groupId>org.apache.maven.surefire</groupId>
               <artifactId>surefire-junit47</artifactId>
-              <version>2.22.0</version>
+              <version>${surefire.version}</version>
             </dependency>
           </dependencies>
         </plugin>
+
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>buildnumber-maven-plugin</artifactId>
@@ -300,33 +307,28 @@
             </items>
           </configuration>
         </plugin>
+
         <plugin>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
           <version>${springboot.version}</version>
         </plugin>
+
         <plugin>
           <groupId>org.jvnet.jaxb2.maven2</groupId>
           <artifactId>maven-jaxb2-plugin</artifactId>
           <version>0.14.0</version>
         </plugin>
+
       </plugins>
     </pluginManagement>
   </build>
 
   <distributionManagement>
-  <!--  TODO
-    <repository>
-      <id>central</id>
-      <name>libs-release</name>
-      <url>http://artifactory-sdc.onsdigital.uk/artifactory/libs-release-local</url>
-    </repository>
-    <snapshotRepository>
-      <id>snapshots</id>
-      <name>libs-snapshots</name>
-      <url>http://artifactory-sdc.onsdigital.uk/artifactory/libs-snapshot-local</url>
-    </snapshotRepository>
- -->
+    <!-- TODO <repository> <id>central</id> <name>libs-release</name> <url>http://artifactory-sdc.onsdigital.uk/artifactory/libs-release-local</url> 
+      </repository> <snapshotRepository> <id>snapshots</id> <name>libs-snapshots</name> 
+      <url>http://artifactory-sdc.onsdigital.uk/artifactory/libs-snapshot-local</url> 
+      </snapshotRepository> -->
   </distributionManagement>
 
 </project>
