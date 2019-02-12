@@ -32,7 +32,6 @@
     <springboot.version>2.1.0.RELEASE</springboot.version>
     <springrabbit.version>2.1.1.RELEASE</springrabbit.version> <!-- sync with boot? -->
     <springcloud.version>Finchley.RELEASE</springcloud.version>
-    <common.version>0.0.0-SNAPSHOT</common.version>
     <java.version>11</java.version>
     <jacoco.version>0.8.3</jacoco.version>
     <orika.version>1.5.2</orika.version>
@@ -71,12 +70,6 @@
         <groupId>org.springframework.amqp</groupId>
         <artifactId>spring-rabbit</artifactId>
         <version>${springrabbit.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>uk.gov.ons.ctp.integration.common</groupId>
-        <artifactId>framework</artifactId>
-        <version>${common.version}</version>
       </dependency>
 
       <!-- need separate jaxb deps after java11 removed them -->
