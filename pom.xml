@@ -29,7 +29,7 @@
   </scm>
 
   <properties>
-    <springboot.version>2.1.0.RELEASE</springboot.version>
+    <springboot.version>2.1.3.RELEASE</springboot.version>
     <springrabbit.version>2.1.1.RELEASE</springrabbit.version> <!-- sync with boot? -->
     <springcloud.version>Finchley.RELEASE</springcloud.version>
     <java.version>11</java.version>
