@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.gov.ons.ctp.integration</groupId>
   <artifactId>census-int-common-config</artifactId>
-  <version>0.0.10</version>
+  <version>0.0.11-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>CTP Integration Dependencies</name>
   <description>CTP Integration Dependencies</description>
@@ -25,7 +25,7 @@
     <url>https://github.com/ONSdigital/census-int-common-config</url>
     <connection>scm:git:https://github.com/ONSdigital/census-int-common-config</connection>
     <developerConnection>scm:git:https://github.com/ONSdigital/census-int-common-config</developerConnection>
-    <tag>census-int-common-config-0.0.10</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
