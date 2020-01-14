@@ -22,7 +22,7 @@
                     <snapshots>
                         <enabled>false</enabled>
                     </snapshots>
-                    <id>central</id>
+                    <id>releases</id>
                     <name>libs-release</name>
                     <url>https://ons.jfrog.io/ons/libs-releases-local</url>
                 </repository>
@@ -42,7 +42,7 @@
         <server>
             <username>integration-ci</username>
             <password>${env.JFROG_TOKEN}</password>
-            <id>central</id>
+            <id>releases</id>
         </server>
         <server>
             <username>integration-ci</username>
@@ -52,7 +52,7 @@
         <server>
             <username>integration-ci</username>
             <password>${env.JFROG_TOKEN}</password>
-            <id>jcenter</id>
+            <id>external-repos</id>
         </server>
     </servers>
 </settings>
