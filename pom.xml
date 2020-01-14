@@ -317,14 +317,14 @@
 
   <distributionManagement>
     <repository>
-      <id>central</id>
+      <id>releases</id>
       <name>libs-release</name>
-      <url>http://artifactory-sdc.onsdigital.uk/artifactory/libs-release-local</url>
+      <url>https://ons.jfrog.io/ons/libs-releases-local</url>
     </repository>
     <snapshotRepository>
       <id>snapshots</id>
       <name>libs-snapshots</name>
-      <url>http://artifactory-sdc.onsdigital.uk/artifactory/libs-snapshot-local</url>
+      <url>https://ons.jfrog.io/ons/libs-snapshots-local</url>
     </snapshotRepository>
   </distributionManagement>
 

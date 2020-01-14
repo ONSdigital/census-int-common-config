@@ -14,9 +14,9 @@
                     <snapshots>
                         <enabled>false</enabled>
                     </snapshots>
-                    <id>jcenter</id>
-                    <name>JCenter Repository</name>
-                    <url>https://ons.jfrog.io/ons/jcenter</url>
+                    <id>external-repos</id>
+                    <name>External Virtual Repository</name>
+                    <url>https://ons.jfrog.io/ons/external-repos</url>
                 </repository>
                 <repository>
                     <snapshots>
