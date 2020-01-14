@@ -49,5 +49,10 @@
             <password>${env.JFROG_TOKEN}</password>
             <id>snapshots</id>
         </server>
+        <server>
+            <username>integration-ci</username>
+            <password>${env.JFROG_TOKEN}</password>
+            <id>jcenter</id>
+        </server>
     </servers>
 </settings>
