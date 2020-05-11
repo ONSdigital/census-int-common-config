@@ -121,6 +121,12 @@
       </dependency>
 
       <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>4.2</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>${jacoco.version}</version>
@@ -155,13 +161,6 @@
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
         <version>6.11</version>
-        <scope>test</scope>
-      </dependency>
-
-      <dependency>
-        <groupId>uk.gov.ons.ctp.common</groupId>
-        <artifactId>test-framework</artifactId>
-        <version>${common.version}</version>
         <scope>test</scope>
       </dependency>
 
