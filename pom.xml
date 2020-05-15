@@ -30,7 +30,6 @@
 
   <properties>
     <springboot.version>2.3.0.RC1</springboot.version>
-    <springcloud.version>Finchley.RELEASE</springcloud.version>
     <java.version>11</java.version>
     <jacoco.version>0.8.3</jacoco.version>
     <orika.version>1.5.2</orika.version>
@@ -49,14 +48,6 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
         <version>${springboot.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-dependencies</artifactId>
-        <version>${springcloud.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
