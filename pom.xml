@@ -34,8 +34,6 @@
     <jacoco.version>0.8.3</jacoco.version>
     <orika.version>1.5.2</orika.version>
     <surefire.version>3.0.0-M3</surefire.version>
-    <lombok.version>1.18.4</lombok.version>
-    <failsafe.version>3.0.0-M3</failsafe.version>
     <guava.version>29.0-jre</guava.version>
     <godaddylogging.version>1.2.5</godaddylogging.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -147,14 +145,12 @@
         <version>${godaddylogging.version}</version>
       </dependency>
 
-
       <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
         <version>6.11</version>
         <scope>test</scope>
       </dependency>
-
     </dependencies>
   </dependencyManagement>
 
