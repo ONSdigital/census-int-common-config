@@ -37,9 +37,9 @@
                     <id>central</id>
                     <name>External Virtual Repository</name>
                     <url>https://ons.jfrog.io/ons/external-repos</url>
-            </pluginRepository>
-
+                </pluginRepository>
             </pluginRepositories>
+
         </profile>
     </profiles>
 
